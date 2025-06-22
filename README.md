@@ -1,0 +1,2 @@
+# BetterBlogs
+BetterBlogs for All
