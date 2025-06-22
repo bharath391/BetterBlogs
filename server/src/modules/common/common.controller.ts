@@ -188,8 +188,6 @@ const publicProfile = async (req: Request, res: Response) => {
         // Calculate blog statistics
         const blogStats = {
             totalBlogs: user.myBlogs.length,
-            totalFollowers: user.followers.length,
-            totalFollowing: user.following.length,
             totalViews: user.myBlogs.reduce((acc: number, blog: any) => acc + blog.views.length, 0),
             totalLikes: user.myBlogs.reduce((acc: number, blog: any) => acc + blog.likes.length, 0)
         };
