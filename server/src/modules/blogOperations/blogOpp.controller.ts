@@ -8,7 +8,6 @@ const likeBlog = async (req: Request, res: Response) => {
         const blogid = req.params.blogId;
         console.log(blogid);
         const blogId = new Types.ObjectId(blogid as string);
-        console.log('blog******************id',blogId);
         const blog = await blogCollection.findOne({_id:blogId});
            
         if(!blog){
